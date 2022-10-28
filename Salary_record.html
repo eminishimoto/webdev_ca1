@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Emi">
+    <meta name="description" content="Data tables">
+    <title>Employee Table</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- i.connect to CSS file-->
+</head> 
+
+
+<body> 
+    <h1>HR DataTables</h1>
+     <ul>
+        <li><a href="Employee.html#nav">Employee</a></li> <!-- g. reference all of files with <a>-->
+        <li><a href="Gender.html#nav">Gender</a></li>
+        <li><a href="Salary_record.html#nav">Salary_record</a></li>
+        <li><a href="Saraly_reason.html#nav">Saraly_reason</a></li>
+        <li><a href="Employee-Department_record.html#nav">Employee-Deartment_record</a></li>
+        <li><a href="Department.html#nav">Department</a></li>
+        <li><a href="Department-Manager.html#nav">Department-Manager</a></li>
+     </ul>
+     <h2>Salary_record</h2>     <!-- a. Visible table name (entity) outside of the table -->
+        <table class="zebra">  <!-- i.  Zebra Striping -->
+        <thead>  
+        <tr> <!-- ik. Use Colspan or Rowspan: reference https://html.spec.whatwg.org/multipage/tables.html--> 
+             <!-- c.primary froreign key-->
+            <th rowspan=2><img src="images.jpeg" alt="" width="30" height="30">salary record id(int)</th>  
+            <th rowspan=2><img src="imagesforeignkey.png" alt="" width="50" height="50">employee id(int)</th> 
+            <th rowspan=2>amount(int)</th> 
+            <th rowspan=2><img src="imagesforeignkey.png" alt="" width="50" height="50">reason id(int)</th> 
+            <th colspan=2>salary date</th> 
+        </tr> 
+        <tr>
+            <th>salary start(date)</th> 
+            <th>salary_end</th> 
+         </tr>
+        </thead> 
+        <tbody> 
+        <tr> 
+            <td>1</td> 
+            <td>1</td> 
+            <td>400</td> 
+            <td>1</td> 
+            <td>08072022</td> 
+            <td>08082022</td> 
+        </tr> 
+        <tr> 
+            <td>2</td> 
+            <td>1</td> 
+            <td>500</td> 
+            <td>3</td> 
+            <td>09082022</td> 
+            <td>00000000</td> 
+        </tr> 
+        <tr> 
+            <td>3</td>
+            <td>2</td> 
+            <td>450</td> 
+            <td>1</td> 
+            <td>09072021</td> 
+            <td>00000000</td>
+        </tr> 
+        <tr> 
+            <td>4</td>
+            <td>3</td> 
+            <td>800</td> 
+            <td>2</td> 
+            <td>09072021</td> 
+            <td>09072022</td> 
+        </tr> 
+        <tr> 
+            <td>5</td>
+            <td>5</td> 
+            <td>400</td> 
+            <td>1</td> 
+            <td>08072022</td> 
+            <td>08082022</td> 
+        </tr> 
+        <tr> 
+            <td>6</td>
+            <td>6</td> 
+            <td>700</td> 
+            <td>1</td> 
+            <td>08072022</td> 
+            <td>08082022</td> 
+        </tr> 
+        <tr> 
+            <td>7</td>
+            <td>7</td> 
+            <td>800</td> 
+            <td>2</td> 
+            <td>09072021</td> 
+            <td>09072022</td> 
+        </tr> 
+        <tr> 
+            <td>8</td>
+            <td>8</td> 
+            <td>900</td> 
+            <td>4</td> 
+            <td>09072020</td> 
+            <td>09072022</td> 
+        </tr> 
+        <tr> 
+            <td>9</td>
+            <td>9</td> 
+            <td>400</td> 
+            <td>6</td> 
+            <td>08072022</td> 
+            <td>08082022</td> 
+        </tr> 
+        <tr> 
+            <td>10</td>
+            <td>10</td> 
+            <td>400</td> 
+            <td>5</td> 
+            <td>01072022</td> 
+            <td>01082022</td> 
+        </tr> 
+        </tbody> 
+        </table> 
+</body> 
+</html>
