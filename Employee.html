@@ -5,28 +5,24 @@
     <meta name="Emi Nishimoto" content="Emi">
     <meta name="Table" content="Table"> 
     <title>Employee</title>
-    <link rel="stylesheet" href="css/style.css" /> <!-- lconnect to CSS file-->
+    <link rel="stylesheet" href="css/style.css" /> <!-- i.connect to CSS file-->
 </head> 
 <body>
     
     <h1>Employee</h1>       <!-- a. Visible table name (entity) outside of the table -->
     <table class="zebra">  <!-- i.  Zebra Striping -->
         <thead> 
+        <tr>  <!-- ik. Use Colspan or Rowspan-->
+            <th rowspan=2><img src="images.jpeg"alt="" width="50" height="50">employee id (int)</th>  
+            <th colspan=2>name</th>
+            <th rowspan=2>data of birth(date)</th> 
+            <th rowspan=2>hire date(date)</th> 
+            <th rowspan=2><img scr="imagesforeignkey.png"alt="" width="50" height="50">gender id(int)</th> 
+        </tr> 
         <tr>
-           <th></th>
-           <th colspan="2">name</th>
-           <th></th> 
-           <th></th> 
-           <th></th> 
-        </tr>
-        <tr> 
-            <th><img src=https://image.shutterstock.com/shutterstock/photos/1166663905/display_1500/stock-vector-key-vector-icon-templates-1166663905.jpg alt="" width="50" height="50">employee id (int)</th>  
             <th>first name(str)</th> 
             <th>sir name(str)</th> 
-            <th>data of birth(date)</th> 
-            <th>hire date(date)</th> 
-            <th><img scr=https://image.shutterstock.com/image-vector/key-line-vector-icon-260nw-565227550.jpg alt="" width="30" height="30">gender id(int)</th> 
-        </tr> 
+         </tr>
         </thead> 
         <tbody> 
         <tr> 
