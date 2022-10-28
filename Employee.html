@@ -2,26 +2,37 @@
 <html lang="en"> 
 <head>
     <meta charset="utf-8">
-    <meta name="Emi Nishimoto" content="Emi">
-    <meta name="Table" content="Table"> 
-    <title>Employee</title>
-    <link rel="stylesheet" href="css/style.css" /> <!-- i.connect to CSS file-->
+    <meta name="author" content="Emi">
+    <meta name="description" content="Data tables">
+    <title>Employee Table</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- i.connect to CSS file-->
 </head> 
-<body>
-    
-    <h1>Employee</h1>       <!-- a. Visible table name (entity) outside of the table -->
-    <table class="zebra">  <!-- i.  Zebra Striping -->
-        <thead> 
-        <tr>  <!-- ik. Use Colspan or Rowspan-->
-            <th rowspan=2><img src="images.jpeg"alt="" width="50" height="50">employee id (int)</th>  
+
+
+<body> 
+    <h1>HR DataTables</h1>
+     <ul>
+        <li><a href="Employee.html#nav">Employee</a></li> <!-- g. reference all of files with <a>-->
+        <li><a href="Gender.html#nav">Gender</a></li>
+        <li><a href="Salary_record.html#nav">Salary_record</a></li>
+        <li><a href="Saraly_reason.html#nav">Saraly_reason</a></li>
+        <li><a href="Employee-Department_record.html#nav">Employee-Deartment_record</a></li>
+        <li><a href="Department.html#nav">Department</a></li>
+        <li><a href="Department-Manager.html#nav">Department-Manager</a></li>
+     </ul>
+     <h2>Employee</h2>     <!-- a. Visible table name (entity) outside of the table -->
+        <table class="zebra">  <!-- i.  Zebra Striping -->
+        <thead>  
+        <tr>  <!-- ik. Use Colspan or Rowspan--> <!-- c.primary froreign key-->
+            <th rowspan=2><img src="images.jpeg" alt="" width="30" height="30">employee id (int)</th>  
             <th colspan=2>name</th>
             <th rowspan=2>data of birth(date)</th> 
             <th rowspan=2>hire date(date)</th> 
-            <th rowspan=2><img scr="imagesforeignkey.png"alt="" width="50" height="50">gender id(int)</th> 
+            <th rowspan=2><img src="imagesforeignkey.png" alt="" width="50" height="50">gender id(int)</th> 
         </tr> 
         <tr>
-            <th>first name(str)</th> 
-            <th>sir name(str)</th> 
+            <th>first name(varchar)</th> 
+            <th>sir name(varchar)</th> 
          </tr>
         </thead> 
         <tbody> 

@@ -1,5 +1,7 @@
+
+ /* h. Reset Default Table Styles -Meyer Rset */
 table, caption, tbody, tfoot, thead, tr, th, td { 
-  margin: 0; /* h.Reset Default Table Styles -Meyer Rset */
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -9,14 +11,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   border-spacing: 0; }  
 
 
-
-
-  
- 
- 
-
 body {
     font: normal medium/1.4 sans-serif;
+    
+  }
+  a{
+    color: #739931;
   }
   table {
     border-collapse: collapse;
@@ -29,8 +29,22 @@ body {
     border: 1px solid #ccc;
   }
 
+  tbody tr:hover{  
+    background:#BDC3C7;
+    color:#FFFFFF;
+  }
+   
+
+  th.fixed{   /*j. Use Fixed Header in your tables* does not work*/
+  top:0;
+  position:fixed;
+  width:auto;
+  display:none;
+  border:none;
+  }
+
   tbody tr:nth-child(odd) {
-    background: #eee;
+    background: rgb(223, 251, 238);
   }
  
  
